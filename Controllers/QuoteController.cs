@@ -30,6 +30,10 @@ namespace takehome.Controllers
                 State = applicantNew.State
             };
             var quote= await _quoteRepository.CreateApplicantAsync(applicant);
+            if (quote.Price == 0)
+            {
+                return NotFound();
+            }
             return new QuoteDto
             {
                 Premium= quote.Price
