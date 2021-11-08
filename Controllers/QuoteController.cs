@@ -32,7 +32,7 @@ namespace takehome.Controllers
             var quote= await _quoteRepository.CreateApplicantAsync(applicant);
             return new QuoteDto
             {
-                Price = quote.Price
+                Premium= quote.Price
             };
         }
     }

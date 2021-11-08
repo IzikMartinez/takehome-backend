@@ -2,6 +2,6 @@
 {
     public record QuoteDto
     {
-        public decimal Price { get; init; }
+        public decimal Premium { get; init; }
     }
 }
