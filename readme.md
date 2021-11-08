@@ -18,5 +18,11 @@ Use Postman or Swagger with the URI https://localhost:5001/Quote to test sending
 
 ## Future work
 
-If I had more time, I would implement dependency injection by creating an interface for QuotRepository.cs.
-I would also create a data transfer object for the Applicant entity. In order to fully flesh out the API, I'd also implement endpoints for GET, PUT, PATCH and DELETE, and then I'd probably containerize the API for deployment.
+If I had more time, I would:
+* Implement dependency injection by creating an interface for QuotRepository.cs.
+* Create a data transfer object for the Applicant entity. 
+* Make the API fully asynchronous (currently only asynchronous between the controller and the repository)
+* Implement endpoints for GET, PUT, PATCH and DELETE.
+* Move the API to a separate folder "takehome.API" in the same root directory as a new folder "takehome.UnitTests"
+* Create a unit test project for the API controller and its new endpoints.
+* Containerize the API for deployment.
