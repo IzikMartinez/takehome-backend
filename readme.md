@@ -19,4 +19,4 @@ Use Postman or Swagger with the URI https://localhost:5001/Quote to test sending
 ## Future work
 
 If I had more time, I would implement dependency injection by creating an interface for QuotRepository.cs.
-I'd also created a data transfer object for the Applicant entity. In order to fully flesh out the API, I'd also implement endpoints for GET, PUT, PATCH and DELETE, and then I'd probably containerize the API for deployment.
+I would also create a data transfer object for the Applicant entity. In order to fully flesh out the API, I'd also implement endpoints for GET, PUT, PATCH and DELETE, and then I'd probably containerize the API for deployment.
