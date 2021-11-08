@@ -11,12 +11,19 @@ namespace takehome.Controllers
     public class QuoteController : ControllerBase
     {
         private readonly QuoteRepository _quoteRepository;
-
         public QuoteController(QuoteRepository quoteRepository)
         {
             this._quoteRepository = quoteRepository;
         }
-
+        
+        
+        /// <summary>
+        /// This function handles POST endpoints. It receives a payload, which is assigned to a new applicant entity
+        /// that entity is sent to the repository, where a quote entity is returned, containing the applicant's
+        /// insurance premium
+        /// </summary>
+        /// <param name="applicantNew">Variable containing POST payload </param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<QuoteDto>> CreateApplicantAsync(Applicant applicantNew)
         {

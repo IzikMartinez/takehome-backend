@@ -2,6 +2,10 @@
 
 namespace takehome.Entities
 {
+    /// <summary>
+    /// Applicant is a record containing information sent from the POST endpoint. This data will be used to calculate
+    /// an insurance premium
+    /// </summary>
     public record Applicant
     {
         public Guid Id { get; init; }
